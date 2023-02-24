@@ -1,12 +1,11 @@
 import { Formik, Form } from "formik";
-import { createCourse } from "../../api/course.api";
+import { updateCourse } from "../../api/course.api";
 import { useNavigate } from "react-router-dom";
 
-export default function FormCreateCourse() {
-  const navigate = useNavigate();
+export default function FormEditCourse(id) {
   return (
     <>
-      <Formik
+     <Formik
         initialValues={{
           title: "",
           category: "",
@@ -17,7 +16,7 @@ export default function FormCreateCourse() {
         }}
         onSubmit={async (values, actions) => {
           try {
-            const response = await createCourse(values);
+            const response = await updateCourse(id,values);
             console.log(values);
             actions.resetForm();
             navigate("/coursesStudent");
@@ -83,6 +82,8 @@ export default function FormCreateCourse() {
           </Form>
         )}
       </Formik>
+
+
     </>
-  );
+  )
 }
