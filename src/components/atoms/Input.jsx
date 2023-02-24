@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default function Input() {
+export default function Input({type,value,name}) {
   return (
-    <div>Input</div>
+    <div class="col">
+    <input
+    type={type}
+    value={value}
+    name={name}
+
+    />
+    </div>
   )
 }

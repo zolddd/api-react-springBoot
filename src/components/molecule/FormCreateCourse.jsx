@@ -24,18 +24,19 @@ export default function FormCreateCourse() {
           } catch (error) {
             console.log(error);
           }
-         
         }}
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
           <Form onSubmit={handleSubmit}>
             <label>Title</label>
+
             <input
               type="text"
               name="title"
               placeholder="Write a title"
               onChange={handleChange}
               value={values.title}
+              className="form-control"
             />
             <label>Category</label>
             <input
@@ -44,6 +45,7 @@ export default function FormCreateCourse() {
               placeholder="Write a category"
               onChange={handleChange}
               value={values.category}
+              className="form-control"
             />
             <label>Image</label>
             <input
@@ -52,6 +54,7 @@ export default function FormCreateCourse() {
               placeholder="Insert a image"
               onChange={handleChange}
               value={values.image}
+              className="form-control"
             />
             <label>Level</label>
             <input
@@ -60,6 +63,7 @@ export default function FormCreateCourse() {
               placeholder="Write a level"
               onChange={handleChange}
               value={values.level}
+              className="form-control"
             />
             <label>Description</label>
             <input
@@ -68,6 +72,7 @@ export default function FormCreateCourse() {
               placeholder="Write a description"
               onChange={handleChange}
               value={values.description}
+              className="form-control"
             />
             <label>Video</label>
             <input
@@ -76,8 +81,13 @@ export default function FormCreateCourse() {
               placeholder="Insert a video"
               onChange={handleChange}
               value={values.video}
+              className="form-control"
             />
-            <button type="submit" disabled={isSubmitting}>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="btn btn-success"
+            >
               {isSubmitting ? "Saving.." : "Save"}
             </button>
           </Form>

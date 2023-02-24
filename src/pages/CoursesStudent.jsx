@@ -1,16 +1,24 @@
 import { getCourses, deleteCourse } from "../api/course.api";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useContextCourses } from "../context/CourseContext";
 
 export default function CoursesStudent() {
-  const [courses, setcourses] = useState([]);
+  const navigate = useNavigate();
+  const {courses,setcourses}=useContextCourses();
 
   const handleDelete = async (id) => {
     try {
       const response = await deleteCourse(id);
       alert("elimado corrrectamente");
+    
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleEdit = (id) => {
+    navigate(`/editCourse/${id}`);
   };
 
   useEffect(() => {
@@ -53,7 +61,14 @@ export default function CoursesStudent() {
               >
                 Delete
               </button>
-              <button className="btn btn-warning">Edit</button>
+              <button
+                onClick={() => {
+                  handleEdit(course.id);
+                }}
+                className="btn btn-warning"
+              >
+                Edit
+              </button>
             </td>
           </tr>
         </tbody>

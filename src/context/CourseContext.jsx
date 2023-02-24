@@ -10,5 +10,5 @@ export const useContextCourses = () => {
 };
 export const CourseContextProvider = ({ children }) => {
   const [courses, setcourses] = useState([]);
-  return <CourseContext.Provider value={{courses}}>{children}</CourseContext.Provider>;
+  return <CourseContext.Provider value={{courses,setcourses}}>{children}</CourseContext.Provider>;
 };
