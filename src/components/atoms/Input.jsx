@@ -1,14 +1,15 @@
-import React from 'react'
-
-export default function Input({type,value,name}) {
+function Input({ type, name, value, handleChange }) {
   return (
-    <div class="col">
-    <input
-    type={type}
-    value={value}
-    name={name}
-
-    />
-    </div>
-  )
+    <>
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={handleChange}
+        className="form-control"
+      />
+    </>
+  );
 }
+
+export default Input;

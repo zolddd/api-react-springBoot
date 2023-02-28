@@ -1,6 +1,8 @@
 import { Formik, Form } from "formik";
 import { createCourse } from "../../api/course.api";
 import { useNavigate } from "react-router-dom";
+import Input from "../atoms/Input";
+import Label from "../atoms/Label";
 
 export default function FormCreateCourse() {
   const navigate = useNavigate();
@@ -28,61 +30,54 @@ export default function FormCreateCourse() {
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
           <Form onSubmit={handleSubmit}>
-            <label>Title</label>
-
-            <input
-              type="text"
-              name="title"
-              placeholder="Write a title"
+            <Label msn={"Title"} />
+            <Input
+              type={"text"}
+              name={"title"}
               onChange={handleChange}
               value={values.title}
-              className="form-control"
             />
-            <label>Category</label>
-            <input
-              type="text"
-              name="category"
-              placeholder="Write a category"
+
+            <Label msn={"Category"} />
+            <Input
+              type={"text"}
+              name={"category"}
               onChange={handleChange}
               value={values.category}
-              className="form-control"
             />
-            <label>Image</label>
-            <input
-              type="file"
-              name="image"
-              placeholder="Insert a image"
+
+            <Label msn={"Image"} />
+            <Input
+              type={"file"}
+              name={"image"}
               onChange={handleChange}
               value={values.image}
-              className="form-control"
             />
-            <label>Level</label>
-            <input
-              type="text"
-              name="level"
-              placeholder="Write a level"
+
+            <Label msn={"Level"} />
+            <Input
+              type={"text"}
+              name={"level"}
               onChange={handleChange}
               value={values.level}
-              className="form-control"
             />
-            <label>Description</label>
-            <input
-              type="text"
-              name="description"
-              placeholder="Write a description"
+
+            <Label msn={"Description"} />
+            <Input
+              type={"text"}
+              name={"description"}
               onChange={handleChange}
               value={values.description}
-              className="form-control"
             />
-            <label>Video</label>
-            <input
-              type="file"
-              name="video"
-              placeholder="Insert a video"
+
+            <Label msn={"Video"} />
+            <Input
+              type={"file"}
+              name={"video"}
               onChange={handleChange}
               value={values.video}
-              className="form-control"
             />
+            
             <button
               type="submit"
               disabled={isSubmitting}

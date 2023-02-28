@@ -8,8 +8,8 @@ import LandigPage from "./pages/LandigPage";
 import CoursesStudent from "./pages/CoursesStudent";
 import HomeTeacher from "./pages/HomeTeacher";
 import FormRegisterTeacher from "./components/molecule/FormRegisterTeacher";
-import TargetCourse from './components/molecule/TargetCourse';
 import FormEditCourse from './components/molecule/FormEditCourse';
+
 
 
 function App() {
@@ -21,7 +21,6 @@ function App() {
         <Route path="/registerTeacher" element={<FormRegisterTeacher/>} />
         <Route path="/createCourse" element={<FormCreateCourse />} />
         <Route path="/coursesStudent" element={<CoursesStudent/>} />
-        <Route path="/taguaLoco" element={<TargetCourse />} />
         <Route path="/registerStudent" element={<FormRegisterStudent />} />
         <Route path="/editCourse/:id" element={<FormEditCourse />} />
       </Routes>
