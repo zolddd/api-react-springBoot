@@ -78,6 +78,7 @@ export default function CoursesStudent() {
   return (
     <>
       <h1>Courses you have created</h1>
+      <h2>prueba para hacer commit desde valeria_dev</h2>
       {renderMain()}
     </>
   );
