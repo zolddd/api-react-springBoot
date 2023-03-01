@@ -1,0 +1,118 @@
+section{
+	padding: 80px 13%;
+}
+
+
+/* about */
+
+
+/* RESPOSIVO AQUI */
+/* @media screen and (max-width: 890px){
+	.home{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.home-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.home-text h1{
+		text-align: center;
+	}
+	.about{
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.content-home{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+
+@media screen and (max-width: 590px){
+	.home{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.home-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.home-text h1{
+		text-align: center;
+		font-size: 25px;
+	}
+	.home-text h6{
+		font-size: 15px;
+	}
+	.home-text p{
+		font-size: 13px;
+	}
+	.latter input{
+		font-size: 10px;
+	}
+	.latter form input:last-child{
+		padding: 16px 30px;
+	}
+	.home-img img{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		width: 100%;
+	}
+	.content-home{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.home{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.home-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.home-text h1{
+		text-align: center;
+		font-size: 25px;
+	}
+	.home-text h6{
+		font-size: 10px;
+	}
+	.home-text p{
+		font-size: 11px;
+	}
+	.latter input{
+		font-size: 10px;
+	}
+	.latter form input:last-child{
+
+		padding: 16px 30px;
+	}
+	.center-text h2{
+		font-size: 22px;
+		text-align: center;
+	}
+	.content-home{
+		display: flex;
+		flex-direction: column;
+	}
+} */

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --body-font: "Poppins", sans-serif;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-login{
+    background-color: #Fff;
+    border: 2px solid #03989E;
+    border-radius: 20px;
+    padding: 50px 90px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.title-login{
+    color: #03989E;
+    font-weight: bold;
+}
+
+.inputs-login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs-login input{
+    /* outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-left: 20px;
+    width: 385px;
+    height: 66px;
+    margin-top: 5px;
+    border: 2.5px solid hsl(244deg 4% 36%); */
+}
+
+.inputs-login label{
+    /* color: white;
+    position: relative;
+    display: flex;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+    top: 20px; */
+}
+
+.btn-login button{
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    font-size: 18px;
+    width: 385px;
+    height: 66px;
+    background-color:#03989E;
+    font-weight: 900;
+    font-family: var(--body-font);
+}
+
+.description-login a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.description-login a span{
+    text-decoration: none;
+    color: #03989E;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.description-login a span:hover{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #03989E;
+}
+
+.btn-login button:hover{
+    background-color: #119b9fcd;
+    cursor: pointer;
+}
+
+.container-login img{
+    width: 70px;
+    height: 80px;
+}

@@ -1,0 +1,69 @@
+.home{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+	margin: 20px 0px;
+}
+
+.home1{
+	background-image: url(../Icon/Degradado.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+.content-home{
+	display: flex;
+}
+
+.home-text h1{
+	font-size: 3.0rem;
+	margin: 15px 0 15px;
+}
+.home-text h6{
+	color: var(--main-color);
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.home-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	margin-bottom: 48px;
+}
+.latter form{
+	width: 100%;
+	max-width: 460px;
+	position: relative;
+}
+.latter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	outline: none;
+	padding: 16px 140px 16px 15px;
+	border: 2px solid var(--main-color);
+	border-radius: 30px;
+}
+.latter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: var(--main-color);
+	color: var(--bg-color);
+	padding: 16px 40px;
+	border-radius: 30px;
+	cursor: pointer;
+	top: 1.5px;
+	right: 1px;
+}
+.home-img img{
+	height: auto;
+	width: 100%;
+}

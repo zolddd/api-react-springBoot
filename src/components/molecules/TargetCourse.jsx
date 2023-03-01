@@ -1,8 +1,8 @@
 import React from 'react'
-import Title from '../atoms/Title'
+// import Title from '../atoms/Title'
 import Subtitle from '../atoms/Subtitle'
 import Paragraph from '../atoms/Paragraph'
-import "../../CSS/StyleTarget.css"
+// import "../../CSS/StyleTarget.css"
 import LogoA from '../../Images/LogoA.svg'
 import texture from '../../Images/TexturaTarget.svg'
 export default function TargetCourse() {
