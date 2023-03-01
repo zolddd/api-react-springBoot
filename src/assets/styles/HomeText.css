@@ -1,15 +1,16 @@
 .home{
 	position: relative;
 	width: 100%;
+	/* max-height: 100vh; */
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
 	align-items: center;
-	margin: 20px 0px;
+	/* margin: 20px 0px; */
 }
 
 .home1{
-	background-image: url(../Icon/Degradado.png);
+	background-image: url(../icons/Degradado.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

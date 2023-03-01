@@ -75,6 +75,10 @@
     color: #fff;
     font-size: 22px;
 }
+.main-btn button:hover{
+    background-color: #015a5e;
+}
+
 .btn{
 	display: inline-block;
 	font-size: var(--p-font);

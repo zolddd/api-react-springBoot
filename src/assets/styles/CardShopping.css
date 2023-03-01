@@ -70,6 +70,10 @@
     height: 50px;
 }
 
+.courses button:hover{
+    background-color: #015a5e;
+}
+
 .courses-text{
 	padding: 35px 20px;
 }

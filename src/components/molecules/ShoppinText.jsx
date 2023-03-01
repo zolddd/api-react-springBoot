@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from '../atoms/Title'
 import CardShopping from './CardShopping'
+import Button from '../atoms/Button'
+
 
 function ShoppinText() {
   return (
@@ -15,7 +17,8 @@ function ShoppinText() {
         </div>  
 
         <div className='curoses-btn'>
-            <button type="button" class="btn btn-primary">Saber más</button>
+            {/* <button type="button" class="btn btn-primary">Saber más</button> */}
+            <Button msn="Saber más" />
         </div>
     </div>
   )

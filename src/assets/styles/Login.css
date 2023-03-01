@@ -106,3 +106,29 @@
     width: 70px;
     height: 80px;
 }
+
+@media screen and (max-width: 376px){
+    .container-login{
+        border: none;
+    }
+    .inputs-login label{
+        font-size: 15px;
+    }
+    .inputs-login input{
+        width: 310px;     
+        font-size: 13px;   
+    }
+    .btn-login button{
+        width: 310px;   
+    }
+    .description-login{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .description-login a{
+        font-size: 14px;
+
+    }
+}

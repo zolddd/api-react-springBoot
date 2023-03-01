@@ -77,17 +77,20 @@ header{
 }
 
 .container-fluid{
-	padding: 0px 30px;
+	padding: 0px 20px;
 }
 
 .header-btn-iz{
 	display: flex;
-	gap: 20px;
 }
 
 .header-btn-iz button{
 	border: none;
 	border-radius: 10px;
+}
+
+.header-btn-iz button:hover{
+	background-color: #015a5e;
 }
 
 .header-btn-iz a{
@@ -103,5 +106,14 @@ header{
 	.header-btn-iz{
 		display: flex;
 		flex-direction: column;
+	}
+	.header-btn-iz a{
+		font-size: 13px;
+	}
+	.header-btn-iz button{
+		font-size: 13px;
+	}
+	.container-fluid{
+		padding: 0px 12px;
 	}
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../assets/styles/Header.css'
 import LogoImg from'../../assets/icons/LogoPrin.svg'
+import Button from '../atoms/Button'
 import { Link } from 'react-router-dom'
 
 
@@ -28,7 +29,7 @@ function Header() {
 
           <div className='header-btn-iz'>
             <Link to="/login"><a href="#">Iniciar sesion</a></Link>
-            <button type="button" class="btn btn-primary">Registrarse</button>
+            <Button msn="Registrarse" />
           </div>
         </div>
         
