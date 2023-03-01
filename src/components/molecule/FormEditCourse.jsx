@@ -1,7 +1,8 @@
 import { Formik, Form } from "formik";
 import { updateCourse } from "../../api/course.api";
 import { useParams } from "react-router-dom";
-
+import Label from "../atoms/Label";
+import Input from "../atoms/Input";
 
 export default function FormEditCourse() {
  let {id} = useParams();

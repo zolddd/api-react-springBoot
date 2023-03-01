@@ -5,7 +5,7 @@ import Input from "../atoms/Input";
 
 export default function FormRegisterStudent() {
   return (
-    <div>
+    <>
       <Formik
         initialValues={{ name: "", lastName: "", password: "" }}
         onSubmit={async (values, actions) => {
@@ -47,6 +47,6 @@ export default function FormRegisterStudent() {
           </Form>
         )}
       </Formik>
-    </div>
+    </>
   );
 }
