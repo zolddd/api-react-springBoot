@@ -40,7 +40,7 @@ function LoginForm() {
           <Link to="/">No tienes cuenta? <span>Registrate</span></Link>
         </div>
         <div className='btn-login'>
-          <button onClick = {HandlerClick}>Iniciar sesion</button>
+          <Link to="/HomeCursos"><button onClick = {HandlerClick}>Iniciar sesion</button></Link>
         </div>
         <div className='description-login'>
           <Link to="/">Se te olvido tu contraseña <span>Recuperar</span></Link>

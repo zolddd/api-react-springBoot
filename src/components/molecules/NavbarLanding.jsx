@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../assets/styles/Header.css'
+import '../../assets/styles/NavbarLanding.css'
 import LogoImg from'../../assets/icons/LogoPrin.svg'
 import Button from '../atoms/Button'
 import { Link } from 'react-router-dom'
 
 
-function Header() {
+function NavbarLanding() {
   return (
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,4 +38,4 @@ function Header() {
   )
 }
 
-export default Header
+export default NavbarLanding;

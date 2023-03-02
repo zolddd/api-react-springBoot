@@ -4,7 +4,7 @@ import HomeText from '../molecules/HomeText';
 import AboutText from '../molecules/AboutText';
 import '../../assets/styles/Footer.css'
 import '../../assets/styles/CardCategorias.css'
-import Header from '../molecules/Header';
+import NavbarLanding from '../molecules/NavbarLanding'
 import FooterText from '../molecules/FooterText';
 import ShoppinText from '../molecules/ShoppinText';
 
@@ -12,7 +12,7 @@ import ShoppinText from '../molecules/ShoppinText';
 function LandingPage() {
   return (
     <div>
-      <Header/>
+      <NavbarLanding/>
       <section className="home1" id="home">
         <HomeText />
 	    </section>

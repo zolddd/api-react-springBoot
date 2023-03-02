@@ -1,0 +1,122 @@
+
+body{
+    background-color: #F1F5F9;
+}
+
+
+
+
+.añadir{
+    position: relative;
+    top: 0;
+    /* right: 0; */
+    left: 0;
+    padding: 10px 10px;
+    display: flex;
+    gap: 5px;
+    
+}
+
+.añadir a{
+    color: #7A7780;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.row_courses{
+    overflow: hidden;
+    position: relative;
+    width: 290px;
+    height: 291px;
+    /* padding: 20px 30px; */
+    background-color: #DE2A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 10px;
+
+}
+
+.Logo{
+    z-index: 10;
+}
+
+
+.textura{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.Paragraph{
+    z-index: 3;
+}
+
+.Paragraph p{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.title h1{
+    font-size: 15px;
+    color: #ffffffb7;
+}
+
+.btn-row{
+    display: flex;
+    gap: 30px;
+}
+
+.btn-row button{
+    background-color: transparent;
+    padding: 10px 25px;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    transition: .4s ease;
+}
+
+.btn-row button:hover{
+    transform: translateY(-3px);
+}
+
+
+
+#AutoCAD{
+    background-color: #DE2A2A;
+    background-image: url(../icons/AutoCADwhile.svg);
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#Topografia{
+    background-color: #FFA130;
+    background-image: url(../icons/Topografia.svg);
+    background-repeat: no-repeat;
+}
+
+#Sketchup{
+    background-color: #019CDE;
+    background-image: url(../icons/sketchup.svg);
+    background-repeat: no-repeat;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.home2{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+

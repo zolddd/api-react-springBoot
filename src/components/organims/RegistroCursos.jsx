@@ -5,6 +5,7 @@ import '../../assets/styles/RegisterCursos.css'
 import ImgAdd from '../../assets/icons/FotoAdd.svg'
 import ImgVideo from '../../assets/icons/Video.svg'
 import imgX from '../../assets/icons/Off.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -13,13 +14,18 @@ function RegstroCursos() {
     <div className='containerCursos'>
         
         <form className='container-cursos'>
-        <img className='ImgX' src={imgX} alt="logo" />
+        <Link to="/HomeCursos"><img className='ImgX' src={imgX} alt="logo" /></Link>
         <div className='title-cursos'>
             <Title level='h1' text={"Añadir Cursos"}/>
         </div>
         <div className='inputs-cursos'>
         <WrapperInput type = "text" placeholder="Titulo" name="correo"/>
-        <WrapperInput type="text" placeholder="Categoria"  name="contra"/>
+        <select name="" id="">
+            <option value="">Agregar Categoria</option>
+            <option value="AutoCAD ">AutoCAD</option>
+            <option value="Topografia ">Topografia</option>
+            <option value="SketchUp">SketchUp</option>
+        </select>
         </div>
 
         <div className='inputs-cursos'>

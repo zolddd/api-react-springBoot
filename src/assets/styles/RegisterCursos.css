@@ -63,6 +63,19 @@
 }
 
 
+select{
+    position: relative;
+    top: 25px;
+    width: 350px;
+    height: 51px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid hsl(244deg 4% 36%);
+    border-radius: 10px;
+    height: 66px;
+}
+
 .btn-cursos button{
     color: #fff;
     border-radius: 10px;
@@ -233,6 +246,12 @@
 
 
 @media screen and (max-width: 376px){
+    select{
+        width: 310px;
+        border: 2.5px solid hsl(244deg 4% 36%);
+        border-radius: 10px;
+        height: 66px;
+    }
     .container-cursos img{
         position: absolute;
         right: 0;
