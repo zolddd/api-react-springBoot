@@ -8,32 +8,26 @@ import Title from "../atoms/Title";
 
 function FormLoginTeacher() {
     return (
-    <>
     <div className="container">
 <Formik
         initialValues={{ email: "", password: "" }}
-        onSubmit={async (values, actions) => {
+        onSubmit={(values, actions) => {
           try {
-            const response = await createStudent(values);
-            //const isValid= await teacherSchema.isValid() 
+            /* const response = await createStudent(values); */
             console.log(values);
-            actions.resetForm(); 
+            actions.resetForm();
           } catch (error) {
             console.log(error);
           }
         }}
-        //validationSchema={teacherSchema}
       >
-        {({ handleChange, handleSubmit, values, isSubmitting }) => (
+        {({ handleChange, handleSubmit, isSubmitting }) => (
           <Form onSubmit={handleSubmit} className="container-login">
               <img src={LogoImg} alt="LOGO"/>
               <div className="title-login"></div>
               <Title title="Bienvenido" level="h1"/>
             <WrapperInput   name="email"  type="text" onChange={handleChange} msn="Correo Electronico" placeholder="Dirección de correo electronico" />
-            <WrapperInput name="password"  type="password" onChange={handleChange} msn="Contraseña: " placeholder="Contraseña" />
-             <label htmlFor="">Pa que vea valeria</label>
-            <input type="text" name="email" onChange={handleChange}/> 
-            
+            <WrapperInput name="password"  type="password" onChange={handleChange} msn="Contraseña: " placeholder="Contraseña" />   
             <div className="btn-login">
             <button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Iniciando Sesion.." : "Iniciar Sesion"}
@@ -43,7 +37,7 @@ function FormLoginTeacher() {
         )}
       </Formik>
       </div>
-    </>
+  
     );
 }
 

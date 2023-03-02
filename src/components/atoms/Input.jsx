@@ -13,9 +13,9 @@ const StyleInput = styled.input`
     font-weight: bold;
 `;
 
-function Input({ type,name ,value, onChange, placeholder }) {
-  console.log("Input probando:" + onChange)
-  console.log("Name: " + name);
+function Input({ type,name, onChange, placeholder }) {
+  /* console.log("Input probando:" + onChange)
+  console.log("Name: " + name); */
   return(
         <StyleInput type={type} placeholder={placeholder} onChange={onChange} name={name}/>
     )
