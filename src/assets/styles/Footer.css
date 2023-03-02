@@ -1,0 +1,52 @@
+.footer-container{
+    position: relative;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Copyr{
+    font-size: 22px;
+    color: #7A7780;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx{
+    color: #7A7780;
+    font-size: 35px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 610px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-icon{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 380px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-icon{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

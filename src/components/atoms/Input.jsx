@@ -6,7 +6,6 @@ function Input({ type, name, value, handleChange }) {
         name={name}
         value={value}
         onChange={handleChange}
-        className="form-control"
       />
     </>
   );

@@ -3,9 +3,17 @@ import { createStudent } from "../../api/student.api";
 import Label from "../atoms/Label";
 import Input from "../atoms/Input";
 
+
+
+/*import Title from "../atoms/Title";
+import "../../assets/styles/Login.css"
+import WrapperInput from "./WrapperInput";*/
+
+import Login from "../../assets/styles/Login.css"
+
 export default function FormRegisterStudent() {
   return (
-    <>
+    <div className="container">
       <Formik
         initialValues={{ name: "", lastName: "", password: "" }}
         onSubmit={async (values, actions) => {
@@ -19,7 +27,7 @@ export default function FormRegisterStudent() {
         }}
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} className="container-login">
             <Label msn={"Name"} />
             <Input
               type={"text"}
@@ -47,6 +55,6 @@ export default function FormRegisterStudent() {
           </Form>
         )}
       </Formik>
-    </>
+    </div>
   );
 }

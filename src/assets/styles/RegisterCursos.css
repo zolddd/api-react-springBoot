@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --body-font: "Poppins", sans-serif;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+.containerCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-cursos{
+    position: relative;
+    background-color: #Fff;
+    border: 2px solid #03989E;
+    border-radius: 20px;
+    padding: 50px 90px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container-cursos img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.container-cursos .ImgX{
+    width: 40px;
+    transition: 0.5s;
+}
+
+.container-cursos .ImgX:hover{
+    cursor: pointer;
+    width: 45px;
+    /* transform: rotate(10px); */
+}
+
+
+.title-cursos{
+    color: #03989E;
+    font-weight: bold;
+}
+
+.inputs-cursos{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.inputs-cursos input{
+    width: 250px;
+}
+
+
+.btn-cursos button{
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    font-size: 18px;
+    width: 385px;
+    height: 66px;
+    background-color:#03989E;
+    font-weight: 900;
+    font-family: var(--body-font);
+}
+
+.description-cursos a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.description-cursos a span{
+    text-decoration: none;
+    color: #03989E;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.description-curos a span:hover{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #03989E;
+}
+
+
+.textArea textarea{
+    width: 518px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    height: 66px;
+    margin-top: 5px;
+    border: 2.5px solid hsl(244deg 4% 36%);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.checkbox-v2{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.checkbox-v2 input{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.checkbox-v2 label{
+    font-size: 15px;
+    color: white;
+    position: relative;
+    display: flex;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+
+
+
+.btn-cursos button:hover{
+    background-color: #119b9fcd;
+    cursor: pointer;
+}
+
+.file{
+    position: relative;
+    border: 2.5px solid #505050;
+    border-radius: 10px;
+    width: 250px;
+    height: 66px;
+    top: 25px;
+}
+
+.file input{
+    opacity: 1;
+    position: absolute;
+    padding: 10px 10px;
+    font-size: 10px;
+    width: 35px;
+    height: 40px;
+    right: 5px;
+    top: 3px;
+    opacity: 0;
+    z-index: 12;
+    font-size: 1px;
+}
+
+.file input:hover{
+    cursor: pointer;
+}
+
+.file p{
+    color: #797979;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 25px;
+}
+
+.file img{
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    
+}
+
+
+

@@ -3,7 +3,7 @@ import { createCourse } from "../../api/course.api";
 import { useNavigate } from "react-router-dom";
 import Input from "../atoms/Input";
 import Label from "../atoms/Label";
-import { courseSchema } from "../../validations/validationCourse";
+//import { courseSchema } from "../../validations/validationCourse";
 
 export default function FormCreateCourse() {
   const navigate = useNavigate();

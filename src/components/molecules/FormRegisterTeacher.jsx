@@ -1,7 +1,7 @@
 import { Formik, Form } from "formik";
 import Label from "../atoms/Label";
 import Input from "../atoms/Input";
-import { teacherSchema } from "../../validations/validationTeacher";
+//import { teacherSchema } from "../../validations/validationTeacher";
 
 export default function FormRegisterTeacher() {
   return (
@@ -11,14 +11,14 @@ export default function FormRegisterTeacher() {
         onSubmit={async (values, actions) => {
           try {
             const response = await createStudent(values);
-            const isValid= await teacherSchema.isValid() 
+            //const isValid= await teacherSchema.isValid() 
             console.log(values);
             actions.resetForm();
           } catch (error) {
             console.log(error);
           }
         }}
-        validationSchema={teacherSchema}
+        //validationSchema={teacherSchema}
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
           <Form onSubmit={handleSubmit}>

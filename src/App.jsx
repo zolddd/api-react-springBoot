@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FormRegisterStudent from "./components/molecule/FormRegisterStudent"
-import FormCreateCourse from "./components/molecule/FormCreateCourse"
+import FormRegisterStudent from "./components/molecules/FormRegisterStudent"
+import FormCreateCourse from "./components/molecules/FormCreateCourse"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CourseContextProvider } from "./context/CourseContext";
 import HomeStudent from "./pages/HomeStudent";
-import LandigPage from "./pages/LandigPage";
 import CoursesStudent from "./pages/CoursesStudent";
 import HomeTeacher from "./pages/HomeTeacher";
-import FormRegisterTeacher from "./components/molecule/FormRegisterTeacher";
-import FormEditCourse from './components/molecule/FormEditCourse';
+import FormRegisterTeacher from "./components/molecules/FormRegisterTeacher";
+import FormEditCourse from './components/molecules/FormEditCourse';
+import LandingPage from './components/organisms/LandingPage';
 
 
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <CourseContextProvider>
        <Routes>
-        <Route path="/" element={<LandigPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/registerStudent" element={<FormRegisterStudent/>} />
         <Route path="/registerTeacher" element={<FormRegisterTeacher/>} />
         <Route path="/createCourse" element={<FormCreateCourse />} />

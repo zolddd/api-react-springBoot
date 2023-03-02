@@ -1,11 +1,16 @@
 import { Formik, Form } from "formik";
 import Label from "../atoms/Label";
 import Input from "../atoms/Input";
-
+import Title from '../atoms/Title'
+import { Link } from 'react-router-dom'
+import '../../assets/styles/Login.css'
+import LogoImg from '../../assets/icons/LogoPrin.svg'
+import WrapperInput from "../molecules/WrapperInput"
+import { useRef } from 'react'
 
 export default function FormLoginStudent() {
   return (
-    <>
+    <div className='container'>
     <Formik
       initialValues={{ mail: "", password: "" }}
       onSubmit={async (values, actions) => {
@@ -19,7 +24,9 @@ export default function FormLoginStudent() {
       }}
     >
       {({ handleChange, handleSubmit, values, isSubmitting }) => (
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} className='container-login'>
+          <img src={LogoImg} alt="LOGO" />
+          <Title className='title-login' title={"bienvenido"} />
           <Label msn={"Mail"} />
           <Input
             type={"text"}
@@ -40,6 +47,6 @@ export default function FormLoginStudent() {
         </Form>
       )}
     </Formik>
-  </>
+  </div>
   )
 }

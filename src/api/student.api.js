@@ -1,7 +1,9 @@
 import axios from "axios";
+
 export const getStudents = async () => {
   return await axios.get(`http://localhost:8080/students/getAll`);
 };
+
 export const getStudent = async (id) => {
   return await axios.get(`http://localhost:8080/students/getId/${id}`);
 };
