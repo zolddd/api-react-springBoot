@@ -29,7 +29,7 @@ export default function Header() {
         </ul>
 
         <div className='header-btn-iz'>
-          <Link to="/login"><a href="#">Iniciar sesion</a></Link>
+          <Link to="/login-teacher"><a href="#">Iniciar sesion</a></Link>
           <button type="button" class="btn btn-primary" onClick={handlerClick}>Registrarse</button>
         </div>
       </div>

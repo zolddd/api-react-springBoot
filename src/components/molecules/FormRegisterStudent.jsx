@@ -32,10 +32,11 @@ export default function FormRegisterStudent() {
             <Input
               type={"text"}
               name={"name"}
-              onChange={handleChange}
+              handleChange={handleChange}
               value={values.name}
             />
-            <Label msn={"Last name"} />
+            <input type="text" onChange={handleChange}  />
+            <Label msn={"Last name yahir"} />
             <Input
               type={"text"}
               name={"lastName"}

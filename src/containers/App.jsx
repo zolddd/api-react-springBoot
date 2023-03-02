@@ -1,15 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FormRegisterStudent from "./components/molecules/FormRegisterStudent"
-import FormCreateCourse from "./components/molecules/FormCreateCourse"
+import FormRegisterStudent from "../components/molecules/FormRegisterStudent"
+import FormCreateCourse from "../components/molecules/FormCreateCourse"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CourseContextProvider } from "./context/CourseContext";
-import HomeStudent from "./pages/HomeStudent";
-import CoursesStudent from "./pages/CoursesStudent";
-import HomeTeacher from "./pages/HomeTeacher";
-import FormRegisterTeacher from "./components/molecules/FormRegisterTeacher";
-import FormEditCourse from './components/molecules/FormEditCourse';
-import LandingPage from './components/organisms/LandingPage';
-
+import { CourseContextProvider } from "../context/CourseContext";
+/* import HomeStudent from "./pages/HomeStudent"; */
+import CoursesStudent from "../pages/CoursesStudent";
+/* import HomeTeacher from "./pages/HomeTeacher"; */
+import FormRegisterTeacher from "../components/molecules/FormRegisterTeacher";
+import FormEditCourse from '../components/molecules/FormEditCourse';
+import LandingPage from "../components/organisms/LandingPage";
+import FormLoginTeacher from '../components/organisms/FormLoginTeacher';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route path="/coursesStudent" element={<CoursesStudent/>} />
         <Route path="/registerStudent" element={<FormRegisterStudent />} />
         <Route path="/editCourse/:id" element={<FormEditCourse />} />
+        <Route path="/login-teacher" element={<FormLoginTeacher />} />
       </Routes>
     </CourseContextProvider>
   )

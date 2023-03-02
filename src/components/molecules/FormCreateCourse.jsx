@@ -3,6 +3,12 @@ import { createCourse } from "../../api/course.api";
 import { useNavigate } from "react-router-dom";
 import Input from "../atoms/Input";
 import Label from "../atoms/Label";
+import WrapperInput from "./WrapperInput";
+import Title from "../atoms/Title";
+import "../../assets/styles/RegisterCursos.css"
+import imgX from "../../assets/icons/Off.svg";
+import ImgAdd from '../../assets/icons/FotoAdd.svg'
+import ImgVideo from '../../assets/icons/Video.svg'
 //import { courseSchema } from "../../validations/validationCourse";
 
 export default function FormCreateCourse() {
@@ -30,30 +36,48 @@ export default function FormCreateCourse() {
         }}
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
-          <Form onSubmit={handleSubmit}>
-            <Label msn={"Title"} />
+         <>
+         <div className="container-cursos">
+          <Form onSubmit={handleSubmit} className='container-cursos'>
+          <img className='ImgX' src={imgX} alt="logo" />
+          <div className='title-cursos'>
+            <Title level='h1' text={"Añadir Cursos"}/>
+        </div>
+            <div className="inputs-cursos">
+                <WrapperInput name="title" type="text" placeholder="Nombre del curso" msn="Nombre: " />
+                <Label msn="Categoria: "/>
+                <select name="category" placeholder="Categoria" onChange={handleChange}>
+                  <option value="AutoCAD">AutoCad</option>
+                  <option value="Topografia">Topografía</option>
+                  <option value="SketchUp">SketchUp</option>
+                </select>
+            </div>
+            <div className='inputs-cursos'>
+            <div className='file'>
+                <WrapperInput type="file" placeholder="Imagen" id="file2" name="image" handleChange={handleChange}/>
+                <p>Imagen</p>
+                <img className='fileImg' src={ImgAdd} alt="img" />
+            </div>
+            <div className='file'>
+                <WrapperInput type="file" placeholder="Video" id="file2" name="video" handleChange={handleChange}/>
+                <p>Videos</p>
+                <img className='fileImg' src={ImgVideo} alt="img" />
+            </div>
+        
+        </div>
+            
+            
+            
+            {/* <Label msn={"Title"} />
             <Input
               type={"text"}
               name={"title"}
               onChange={handleChange}
               value={values.title}
-            />
+            /> */}
 
-            <Label msn={"Category"} />
-            <Input
-              type={"text"}
-              name={"category"}
-              onChange={handleChange}
-              value={values.category}
-            />
 
-            <Label msn={"Image"} />
-            <Input
-              type={"file"}
-              name={"image"}
-              onChange={handleChange}
-              value={values.image}
-            />
+           
 
             <Label msn={"Level"} />
             <Input
@@ -87,7 +111,9 @@ export default function FormCreateCourse() {
               {isSubmitting ? "Saving.." : "Save"}
             </button>
           </Form>
-        )}
+          </div>
+          </>
+          )}
       </Formik>
     </>
   );
