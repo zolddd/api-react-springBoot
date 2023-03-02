@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../assets/styles/CardShopping.css'
-import AutoCADW from '../../assets/icons/AutoCADWhile.svg'
+import AutoCADW from '../../assets/icons/AutoCADwhile.svg'
 import NivelM from '../../assets/icons/BasicaLevel.svg'
 
 

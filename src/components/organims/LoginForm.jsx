@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../atoms/Title'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import '../../assets/styles/Login.css'
 import LogoImg from '../../assets/icons/LogoPrin.svg'
 import WrapperInput from "../molecules/WrapperInput"
@@ -21,11 +21,13 @@ function LoginForm() {
     alert("Estamos imprimiendo algo " + nombre + " " + contrasenia)
   }
 
+ 
+
   return (
 
     <div className='container'>
       <form className='container-login' ref = {form}>
-        <img src={LogoImg} alt="LOGO" />
+        <img src={LogoImg} alt="LOGO"/>
         <div className='title-login'>
           <Title level='h1' text={"Bienvenido"}/>
         </div>
