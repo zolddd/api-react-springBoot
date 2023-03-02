@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-
-function Input({ type,name ,value, handleChange, placeholder }) {
-  const StyleInput = styled.input`
+const StyleInput = styled.input`
     outline: none;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -14,9 +12,12 @@ function Input({ type,name ,value, handleChange, placeholder }) {
     font-size: 15px;
     font-weight: bold;
 `;
-  
+
+function Input({ type,name ,value, onChange, placeholder }) {
+  console.log("Input probando:" + onChange)
+  console.log("Name: " + name);
   return(
-        <StyleInput type={type} placeholder={placeholder} onChange = {handleChange} name ={name}  value={value}/>
+        <StyleInput type={type} placeholder={placeholder} onChange={onChange} name={name}/>
     )
 }
 

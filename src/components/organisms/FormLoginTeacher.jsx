@@ -17,7 +17,7 @@ function FormLoginTeacher() {
             const response = await createStudent(values);
             //const isValid= await teacherSchema.isValid() 
             console.log(values);
-            actions.resetForm();
+            actions.resetForm(); 
           } catch (error) {
             console.log(error);
           }
@@ -29,8 +29,11 @@ function FormLoginTeacher() {
               <img src={LogoImg} alt="LOGO"/>
               <div className="title-login"></div>
               <Title title="Bienvenido" level="h1"/>
-            <WrapperInput /* name="email" */ type="text"/*  value={values.email} */ handleChange={handleChange} msn="Correo Electronico" placeholder="Dirección de correo electronico" />
-            <WrapperInput /* name="password" */ type="password" /* value={values.password} */ handleChange={handleChange} msn="Contraseña: " placeholder="Contraseña" />
+            <WrapperInput   name="email"  type="text" onChange={handleChange} msn="Correo Electronico" placeholder="Dirección de correo electronico" />
+            <WrapperInput name="password"  type="password" onChange={handleChange} msn="Contraseña: " placeholder="Contraseña" />
+             <label htmlFor="">Pa que vea valeria</label>
+            <input type="text" name="email" onChange={handleChange}/> 
+            
             <div className="btn-login">
             <button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Iniciando Sesion.." : "Iniciar Sesion"}
