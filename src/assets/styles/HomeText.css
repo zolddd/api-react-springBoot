@@ -63,6 +63,7 @@
 	cursor: pointer;
 	top: 1.5px;
 	right: 1px;
+	width: 150px;
 }
 .home-img img{
 	height: auto;

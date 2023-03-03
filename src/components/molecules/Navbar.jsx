@@ -2,7 +2,7 @@ import React from 'react'
 import '../../assets/styles/Navbar.css'
 import LogoImg from'../../assets/icons/LogoPrin.svg'
 import Perfil from '../../assets/icons/Perfil.png'
-
+import LinkNavbar from '../atoms/LinkNavbar'
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,15 +13,9 @@ function Navbar() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Maquetas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ayuda</a>
-            </li>
+          <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Cursos"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Maquetas"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Ayuda"/>
           </ul>
 
           <div className='navbar-perfil'>

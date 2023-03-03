@@ -3,7 +3,7 @@ import '../../assets/styles/NavbarLanding.css'
 import LogoImg from'../../assets/icons/LogoPrin.svg'
 import Button from '../atoms/Button'
 import { Link } from 'react-router-dom'
-
+import LinkNavbar from '../atoms/LinkNavbar'
 
 function NavbarLanding() {
   return (
@@ -16,15 +16,10 @@ function NavbarLanding() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Maquetas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ayuda</a>
-            </li>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Cursos"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Maquetas"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Ayuda"/>
+            
           </ul>
 
           <div className='header-btn-iz'>

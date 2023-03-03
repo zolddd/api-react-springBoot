@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../assets/styles/CardCategorias.css'
-import CardCategories from '../molecules/CardCategories';
+import CardCategories from '../atoms/CardCategories';
 import Title from '../atoms/Title';
 
 

@@ -15,9 +15,9 @@ const StyleInput = styled.input`
 `;
 
 
-function Input({type, placeholder, nameAction, name}){
+function Input({type, placeholder, nameAction, name, value}){
     return(
-        <StyleInput type={type} placeholder={placeholder} Onclick = {nameAction} name = {name}/>
+        <StyleInput type={type} placeholder={placeholder} Onclick = {nameAction} name = {name} value={value}/>
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import Title from '../atoms/Title'
+import Title from './Title'
 import CardShopping from './CardShopping'
-import Button from '../atoms/Button'
+import Button from './Button'
 
 
 function ShoppinText() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/styles/HomeText.css'
 import CursesIMG from '../../assets/icons/courses.svg'
-
+import Input from '../atoms/Input'
 function HomeText() {
   return (
     <div className='home'>
@@ -11,8 +11,9 @@ function HomeText() {
             <p>Own your future learning new skills online</p>
             <div className='latter'>
                 <form>
-                    <input type="email" placeholder="Write Your Email" required />
-                    <input type="submit" value="Let's Start" required />
+                    <Input type="email" placeholder="Write Your Email"/>
+                    <Input type="submit" value="Let's Start"/>
+                   
                 </form>
             </div>
         </div>

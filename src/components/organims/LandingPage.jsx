@@ -1,12 +1,12 @@
 import React from 'react'
 import Categorias from '../molecules/Categorias';
 import HomeText from '../molecules/HomeText';
-import AboutText from '../molecules/AboutText';
+import AboutText from '../atoms/AboutText';
 import '../../assets/styles/Footer.css'
 import '../../assets/styles/CardCategorias.css'
 import NavbarLanding from '../molecules/NavbarLanding'
-import FooterText from '../molecules/FooterText';
-import ShoppinText from '../molecules/ShoppinText';
+import FooterText from '../atoms/FooterText';
+import ShoppinText from '../atoms/ShoppinText';
 
 
 function LandingPage() {

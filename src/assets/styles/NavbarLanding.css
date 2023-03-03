@@ -55,6 +55,7 @@ header{
 .navbar a:hover{
 	color: var(--main-color);
 }
+
 .header-icons{
 	display: flex;
 	align-items: center;
