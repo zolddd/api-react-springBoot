@@ -3,27 +3,43 @@ body{
     background-color: #F1F5F9;
 }
 
-
-
-
-.añadir{
+.containerCur{
     position: relative;
-    top: 0;
-    /* right: 0; */
-    left: 0;
-    padding: 10px 10px;
-    display: flex;
-    gap: 5px;
-    
+    max-width: 100%;
+    height: 100vh;  
 }
 
+.moveraqui{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 13%;
+    gap: 10px;
+}
+
+.añadir{
+    position: absolute;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    padding: 10px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+
 .añadir a{
+    position: relative;
     color: #7A7780;
     text-decoration: none;
     font-weight: bold;
+    right: 10px;
 }
 
+
 .row_courses{
+    position: relative;
     overflow: hidden;
     position: relative;
     width: 290px;
@@ -105,12 +121,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    /* border: 1px solid red; */
-}
 
 .home2{
     display: flex;

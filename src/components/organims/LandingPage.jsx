@@ -30,7 +30,6 @@ function LandingPage() {
         <AboutText/>
 	    </section>
 
-      <hr />
       <FooterText />
     </div>
   )

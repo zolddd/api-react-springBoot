@@ -10,22 +10,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    border: 5px solid red;
+    padding: 15px 18%;
 }
 
 .container-cursos{
     position: relative;
     background-color: #Fff;
-    border: 2px solid #03989E;
     border-radius: 20px;
-    padding: 50px 90px;
+    /* padding: 50px 90px; */
+    padding: 20px 20px;
+    margin: 0 auto;
     width: auto;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 25px;border: 2px solid;
+}
+.container-cursos{
+    border: 2px solid #03989E;
 }
 
 .container-cursos img{
@@ -38,6 +43,7 @@
 .container-cursos .ImgX{
     width: 40px;
     transition: 0.5s;
+    
 }
 
 .container-cursos .ImgX:hover{
@@ -66,12 +72,12 @@
 select{
     position: relative;
     top: 25px;
-    width: 350px;
+    width: 255px;
     height: 51px;
     align-items: center;
     display: flex;
     justify-content: center;
-    border: 2.5px solid hsl(244deg 4% 36%);
+    border: 2.5px solid hsl(249, 4%, 31%);
     border-radius: 10px;
     height: 66px;
 }
@@ -149,9 +155,6 @@ select{
     font-weight: bold;
 }
 
-
-
-
 .btn-cursos button:hover{
     background-color: #119b9fcd;
     cursor: pointer;
@@ -199,7 +202,8 @@ select{
     
 }
 
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 577px){   
     .container-cursos img{
         position: absolute;
         right: 0;
@@ -241,6 +245,9 @@ select{
     }
     .btn-cursos button{
         width: 310px;  
+    }
+    select{
+        width: 310px;
     }
 }
 
@@ -293,5 +300,8 @@ select{
     }
     .btn-cursos button{
         width: 310px;  
+    }
+    .ImgX{
+        top: 100px;
     }
 }
