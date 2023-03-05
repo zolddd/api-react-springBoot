@@ -83,6 +83,7 @@ header{
 
 .header-btn-iz{
 	display: flex;
+	gap: 10px;
 }
 
 .header-btn-iz button{
@@ -98,7 +99,11 @@ header{
 	text-decoration: none;
 }
 
-@media screen and (max-width: 522px){
+.loginA a{
+	color: red;
+}
+
+@media screen and (max-width: 575px){
 	.navbar-collapse ul li{
 		flex-direction: column;
 		display: flex;
@@ -109,7 +114,7 @@ header{
 		flex-direction: column;
 	}
 	.header-btn-iz a{
-		font-size: 13px;
+		font-size: 18px !important;
 	}
 	.header-btn-iz button{
 		font-size: 13px;
@@ -117,4 +122,48 @@ header{
 	.container-fluid{
 		padding: 0px 12px;
 	}
+}
+
+@media screen and (max-width: 426px){
+	.navbar-nav{
+		position: relative;
+		right: 30px;
+	}
+	.navbar-nav a{
+		font-size: 14px !important;
+	}
+	.header-btn-iz{
+		display: flex;
+		flex-direction: column;
+	}
+	.header-btn-iz a{
+		font-size: 12px !important;
+		display: flex;
+	}
+	.header-btn-iz button{
+		font-size: 10px !important;
+	}
+
+}
+
+@media screen and (max-width: 361px){
+	.navbar-nav{
+		position: relative;
+		right: 30px;
+	}
+	.navbar-nav a{
+		font-size: 13px !important;
+	}
+	.header-btn-iz{
+		display: flex;
+		flex-direction: column;
+	}
+	.header-btn-iz a{
+		font-size: 11px !important;
+		display: flex;
+	}
+	.header-btn-iz button{
+		font-size: 10px !important;
+	}
+
 }

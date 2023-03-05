@@ -3,19 +3,18 @@ body{
     background-color: #F1F5F9;
 }
 
-.containerCur{
-    position: relative;
-    max-width: 100%;
-    height: 100vh;  
-}
 
-.moveraqui{
+
+.Conatiner-cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 80px 13%;
-    gap: 10px;
+    gap: 20px;
 }
+
 
 .añadir{
     position: absolute;

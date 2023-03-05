@@ -1,10 +1,9 @@
 import React from 'react'
 import '../../assets/styles/CardCourses.css'
 import texture from '../../assets/icons/textura.svg'
-import logo from '../../assets/icons/AutoCADwhile.svg'
-import FooterText from './FooterText'
 
-function CardCourses({category, name, todo}) {
+
+function CardCourses({category, name}) {
   return (
     <div>
         

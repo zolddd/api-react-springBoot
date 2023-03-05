@@ -22,7 +22,6 @@ function Navbar() {
             <img src={Perfil} alt="Perfil" />
           </div>
         </div>
-        
       </div>
     </nav>
   )

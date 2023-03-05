@@ -1,0 +1,185 @@
+nav{
+    box-shadow:  0 0 10px rgba(0,0,0,.5);
+}
+
+.texturaCir1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(4, 105, 255, 0.22);
+    border-radius: 50%;
+    top: 60px;
+    right: -200px;
+}
+
+.texturaCir2{
+    position: absolute;
+    background-color: rgba(124, 198, 203, 0.22);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    top: 0;
+    left: -170px;
+}
+
+.texturaCir3{
+    position: absolute;
+    background-color: rgba(247, 177, 59, 0.2);
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.container-Students{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+
+.rowV2{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 392px;
+    height: auto;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 0 10px rgba(0,0,0,.5);
+    /* gap: 40px; */
+}
+
+.row_title{
+    padding: 10px 15px;
+    background-color: #DA412E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row_title h1{
+    color: #fff;
+    font-size: 25px;
+}
+
+.paragraph{
+    /* border: 1px solid rebeccapurple; */
+    width: 230px;
+    margin: 25px 15px;
+}
+
+.paragraph p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row_down{
+    position: relative;
+    margin: 15px 15px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.content-down{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-down h4{
+    font-size: 18px;
+    color: #8B8A8E;
+}
+
+.content-down h2{
+    font-size: 20px;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.habilidades h2{
+    font-size: 20px;
+}
+
+.barra{
+    width: 174px;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progreso{
+    width: var(--w);
+    height: 100%;
+    background-color: #DA412E;
+    border-radius: 10px;
+    animation: Aumentar 5s ease;
+}
+
+
+#AutoCad{
+    background-color: #DE2A2A;
+    
+}
+
+#TopografiA{
+    background-color: #FFA130;
+}
+
+@media screen and (max-width: 990px){
+    .navbar{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .container{
+        position: relative;
+        top: 10vh;
+    }
+}
+
+@media screen and (max-width: 386px){
+    .rowV2{
+        width: 331px;
+        height: auto;
+    }
+    .row_down{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .paragraph{
+        width: 220px;
+    }
+    .content-down{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .habilidades{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .barra{
+        width: 226px;
+    }
+}

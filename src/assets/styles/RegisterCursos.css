@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid red;
     padding: 15px 18%;
 }
 
@@ -213,6 +212,7 @@ select{
         margin: 0 auto;
         /* border: 1px solid red; */
         padding: 10px;
+        background-color: transparent;
     }
     .inputs-cursos:nth-child(2){
         position: relative;
