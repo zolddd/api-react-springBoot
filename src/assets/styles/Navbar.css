@@ -12,6 +12,13 @@ header{
 	transition: all .40s ease;
 }
 
+.nav-item1{
+	position: relative;
+	left: -240%;
+	/* border: 2px solid red; */
+
+}
+
 .navbar-brand img{
 	width: 30px;
 	height: 40px;
@@ -26,6 +33,7 @@ header{
 	gap: 20px;
 }
 .navbar a{
+	text-decoration: none;
 	color: var(--text-color);
 	font-weight: 600;
 	font-size: var(--p-font);

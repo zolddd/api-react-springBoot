@@ -3,6 +3,7 @@ import '../../assets/styles/Navbar.css'
 import LogoImg from'../../assets/icons/LogoPrin.svg'
 import Perfil from '../../assets/icons/Perfil.png'
 import LinkNavbar from '../atoms/LinkNavbar'
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -16,7 +17,9 @@ function Navbar() {
             <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Cursos"/>
             <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Maquetas"/>
             <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Ayuda"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="/" Name="Landing"/>
           </ul>
+          
 
           <div className='navbar-perfil'>
             <img src={Perfil} alt="Perfil" />

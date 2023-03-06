@@ -1,11 +1,21 @@
-
 .container-card2{
     display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 45px;
+    width: 100%;
+    height: auto;
+}
+
+.conatinerCategoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card-flex{

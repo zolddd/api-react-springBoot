@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../assets/styles/AboutText.css'
-import About from '../../assets/icons/home.svg'
+import About from '../../assets/icons/OBJECTS.png'
 
 function AboutText() {
   return (

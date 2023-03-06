@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card1{
+    position: relative;
+    width: 320px;
+    height: 330px;
+    margin: 30px;
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 15px 0 #fff,
+    inset 0 -15px 0 rgba(255,255,255,0.25);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.4s ease;
+    /* background: linear-gradient(to bottom, #DA412E, #f65b6b); */
+}
+
+.card1:hover{
+    transform: translateY(-3px);
+}
+
+.card1::before{
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: -40%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.2));
+    transform: rotate(35deg);
+    pointer-events: none;
+    filter: blur(6px);
+    border: none;
+}
+
+
+
+
+.icon1{
+    position: relative;
+    width: 140px;
+    height: 120px;
+    background: #F1F5F9;
+    border-bottom-left-radius: 100px ;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+    inset 0 -8px 0 #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.icon1::before{
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px #fff;
+    background-color: transparent;
+}
+
+.icon1::after{
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: -15px -15px 0 15px #fff;
+}
+
+.icon1 img{
+    position: relative;
+    width: 70px;
+    z-index: 1004;
+}
+
+.content1{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.content1 h2 {
+    font-size: 1.7em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.content1 p{
+    color: #fff;
+    line-height: 1.5em;
+}
+
+#AutoCadA{
+    
+    background-color: #DA412E;
+}
+
+#TopografiaA{
+    background-color: #FFA130;
+}

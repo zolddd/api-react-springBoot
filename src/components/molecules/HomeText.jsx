@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../assets/styles/HomeText.css'
-import CursesIMG from '../../assets/icons/courses.svg'
+// import CursesIMG from '../../assets/icons/courses.svg'
+import Design from '../../assets/icons/Design.png';
 import Input from '../atoms/Input'
 function HomeText() {
   return (
@@ -13,13 +14,13 @@ function HomeText() {
                 <form>
                     <Input type="email" placeholder="Write Your Email"/>
                     <Input type="submit" value="Let's Start"/>
-                   
                 </form>
             </div>
         </div>
 
         <div className="home-img">
-            <img src={CursesIMG} alt='imgaqui'/>
+            {/* <img src={CursesIMG} alt='imgaqui'/> */}
+            <img src={Design} alt="" />
         </div>
     </div>
   )

@@ -7,12 +7,12 @@ import Button from './Button'
 function ShoppinText() {
   return (
     <div>
-        <div class="center-text">
+        <div class="center-text" >
             <h5>COURSES</h5>
             <Title level='h2' text="Explore Popular Courses" />
         </div>
 
-        <div className='courses-content' >
+        <div className='courses-content'>
             <CardShopping />
         </div>  
 

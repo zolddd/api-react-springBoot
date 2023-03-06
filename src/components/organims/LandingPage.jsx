@@ -12,14 +12,12 @@ import ShoppinText from '../atoms/ShoppinText';
 function LandingPage() {
   return (
     <div>
-      <NavbarLanding/>
-      <section className="home1" id="home">
-        <HomeText />
-	    </section>
-
-      <section className='container-card1' id='categories'>
-        <Categorias />
-		  </section>
+      <div className='LandingNa'  >
+        <NavbarLanding/>
+      </div>
+      <HomeText />
+      
+      <Categorias  />
 
       <section className='courses ' id='courses'>
         <ShoppinText/>
@@ -30,6 +28,7 @@ function LandingPage() {
         <AboutText/>
 	    </section>
 
+      <hr />
       <FooterText />
     </div>
   )
