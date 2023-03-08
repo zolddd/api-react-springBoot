@@ -5,7 +5,7 @@ function FooterText() {
   return (
     <div className='footer-container'>
         <div className="Copyr">
-            © 2023 Company, Inc
+            <p>© 2023 ArchitectureStudio, Inc</p>
         </div>
 
         <div className='footer-icon'>

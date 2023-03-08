@@ -27,7 +27,6 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* background: transparent; */
 	padding: 23px 13%;
 	transition: all .40s ease;
 }
@@ -104,10 +103,13 @@ header{
 }
 
 @media screen and (max-width: 575px){
+	.navbar{
+		border-bottom-left-radius: none;
+		border-bottom-right-radius: none;
+	}
 	.navbar-collapse ul li{
 		flex-direction: column;
 		display: flex;
-
 	}
 	.header-btn-iz{
 		display: flex;

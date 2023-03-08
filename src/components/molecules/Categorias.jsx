@@ -22,7 +22,7 @@ function Categorias() {
           
 
         <div class="main-btn">
-          <button type="button" class="btn btn-primary">Más Categorias</button>
+          <button type="button" class="btn btn-primary">MÁS CATEGORIAS</button>
         </div>
     </div>
   )

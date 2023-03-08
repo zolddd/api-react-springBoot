@@ -7,6 +7,8 @@ import '../../assets/styles/CardCategorias.css'
 import NavbarLanding from '../molecules/NavbarLanding'
 import FooterText from '../atoms/FooterText';
 import ShoppinText from '../atoms/ShoppinText';
+import ShoppingNow from '../molecules/ShoppingNow';
+
 
 
 function LandingPage() {
@@ -27,6 +29,10 @@ function LandingPage() {
       <section className="about" id="about">
         <AboutText/>
 	    </section>
+
+      <section className='shoping1'>
+        <ShoppingNow/>
+      </section>
 
       <hr />
       <FooterText />

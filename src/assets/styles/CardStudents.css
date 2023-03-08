@@ -146,10 +146,6 @@ nav{
 }
 
 @media screen and (max-width: 990px){
-    .navbar{
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
     .container{
         position: relative;
         top: 10vh;

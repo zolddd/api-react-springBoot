@@ -16,9 +16,9 @@ function NavbarLanding() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Inicio"/>
+            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Categoria"/>
             <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Cursos"/>
-            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Maquetas"/>
-            <LinkNavbar LiClassName="nav-item" AClassName="nav-link" Ref="#" Name="Ayuda"/>
             
           </ul>
 

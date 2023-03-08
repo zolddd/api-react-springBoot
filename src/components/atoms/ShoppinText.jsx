@@ -18,7 +18,7 @@ function ShoppinText() {
 
         <div className='curoses-btn'>
             {/* <button type="button" class="btn btn-primary">Saber más</button> */}
-            <Button msn="Saber más" />
+            <Button msn="MAS INFO" />
         </div>
     </div>
   )

@@ -36,6 +36,9 @@
         display: flex;
         justify-content: center;
     }
+    .Copyr p{
+        font-size: 18px;
+    }
     
 }
 
@@ -49,5 +52,6 @@
         display: flex;
         justify-content: center;
     }
+    
     
 }
