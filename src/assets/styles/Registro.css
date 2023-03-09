@@ -1,0 +1,99 @@
+
+
+.container-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-registro{
+    background-color: #Fff;
+    border: 2px solid #03989E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: auto;
+    width: 600px;
+    box-shadow: 0 1px 5px #000000d0;
+}
+
+.register-title{
+    padding: 25px;
+    font-weight: bold;
+    color: #03989E;
+    font-size: 2rem;
+}
+
+
+.form-registro input{
+    height: 66px;
+    border-radius: 10px;
+    border: 2.5px solid hsl(244deg 4% 36%);
+    color: hsl(244deg 4% 36%);
+    font-weight: bold;
+}
+
+
+
+.inputs-v1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputs-v1 input{
+    width: 189px;
+    height: 66px;
+}
+
+.btn-registro{
+    position: relative;
+    display: flex;
+    padding: 30px;
+}
+
+.btn-registro button{
+    background-color: #03989E;
+    height: 60px;
+    width: 385px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputs-v1 input:focus~label,
+.inputs-v1 input:valid~label{
+    top: 5px;
+}
+
+
+@media screen and (max-width: 600px){
+    .form-registro{
+        background-color: transparent;
+        height: auto;
+        border: none;
+    }
+    .register-title{
+        font-size: 2.5rem;
+    }
+    .inputs-v1{
+        flex-direction: column;
+    }
+    .inputs-v1 input{
+        width: 310px;
+    }
+    .form-registro input{
+        width: 310px;
+    }
+    .form-registro label{
+        font-size: 16px;
+    }
+    .btn-registro button{
+        width: 310px;
+    }
+}

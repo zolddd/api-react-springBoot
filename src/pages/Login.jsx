@@ -3,7 +3,7 @@ import LoginForm from "../components/organims/LoginForm"
 
 function Login() {
   return (
-    <div>
+    <div className='login-container'>
         <LoginForm />
     </div>
   )
