@@ -24,7 +24,7 @@ function NavbarLanding() {
 
           <div className='header-btn-iz'>
             <Link to="/login"><a href="#">Iniciar sesion</a></Link>
-            <Button msn="Registrarse" />
+            <Link to="/Registro"><Button msn="Registrarse" /></Link>
           </div>
         </div>
         

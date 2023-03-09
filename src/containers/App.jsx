@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login' element={<Login/>} />
-          <Route path='/Risgistro' element={<Registro/>} />
+          <Route path='/Registro' element={<Registro/>} />
           <Route path='/register-courses' element={<RegisterCourses />} />
           <Route path='/HomeCursos' element={<HomeMaestro />} />
           <Route path='/HomeStudent' element={<HomeStudents/>}/>

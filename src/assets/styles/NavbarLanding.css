@@ -82,12 +82,15 @@ header{
 
 .header-btn-iz{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 10px;
 }
 
 .header-btn-iz button{
 	border: none;
 	border-radius: 10px;
+	padding: 10px 25px;
 }
 
 .header-btn-iz button:hover{
@@ -98,9 +101,9 @@ header{
 	text-decoration: none;
 }
 
-.loginA a{
+/* .loginA a{
 	color: red;
-}
+} */
 
 @media screen and (max-width: 575px){
 	.navbar{
@@ -114,6 +117,8 @@ header{
 	.header-btn-iz{
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 	.header-btn-iz a{
 		font-size: 18px !important;

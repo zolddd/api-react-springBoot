@@ -37,7 +37,7 @@ function LoginForm() {
         <WrapperInput msn = "Contraseña" type="password" placeholder="Contraseña"  name="contra"/>
         </div>
         <div className='description-login'>
-          <Link to="/">No tienes cuenta? <span>Registrate</span></Link>
+          <Link to="/Registro">No tienes cuenta? <span>Registrate</span></Link>
         </div>
         <div className='btn-login'>
           <Link to="/HomeCursos"><button onClick = {HandlerClick}>Iniciar sesion</button></Link>
