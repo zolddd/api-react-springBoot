@@ -8,12 +8,12 @@ export const getStudent = async (id) => {
   return await axios.get(`http://localhost:8080/students/getId/${id}`);
 };
 
-export const createStudent = async (alumno) => {
-  return await axios.post(`http://localhost:8080/students/create`, alumno);
+export const createStudent = async (student) => {
+  return await axios.post(`http://localhost:8080/students/create`, student);
 };
 
-export const updateStudent = async (id) => {
-  return await axios.put(`http://localhost:8080/students/update/${id}`);
+export const updateStudent = async (id,student) => {
+  return await axios.put(`http://localhost:8080/students/update/${id}`,student);
 };
 
 export const deleteStudent = async (id) => {
