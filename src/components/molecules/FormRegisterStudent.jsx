@@ -2,14 +2,7 @@ import { Formik, Form } from "formik";
 import { createStudent } from "../../api/student.api";
 import Label from "../atoms/Label";
 import Input from "../atoms/Input";
-
-
-
-/*import Title from "../atoms/Title";
-import "../../assets/styles/Login.css"
-import WrapperInput from "./WrapperInput";*/
-
-import Login from "../../assets/styles/Login.css"
+import WrapperInput from "./WrapperInput";
 
 export default function FormRegisterStudent() {
   return (
@@ -28,28 +21,10 @@ export default function FormRegisterStudent() {
       >
         {({ handleChange, handleSubmit, values, isSubmitting }) => (
           <Form onSubmit={handleSubmit} className="container-login">
-            <Label msn={"Name"} />
-            <Input
-              type={"text"}
-              name={"name"}
-              handleChange={handleChange}
-              value={values.name}
-            />
-            <input type="text" onChange={handleChange}  />
-            <Label msn={"Last name yahir"} />
-            <Input
-              type={"text"}
-              name={"lastName"}
-              onChange={handleChange}
-              value={values.lastName}
-            />
-            <Label msn={"Password"} />
-            <Input
-              type={"password"}
-              name={"password"}
-              onChange={handleChange}
-              value={values.password}
-            />
+
+<WrapperInput   name="name"  type="text" onChange={handleChange} msn="Name: " placeholder="Ingrese el nombre" />
+<WrapperInput   name="lastName"  type="text" onChange={handleChange} msn="Last Name: " placeholder="ingresa el Last Name" />
+<WrapperInput   name="password"  type="password" onChange={handleChange} msn="Password: " placeholder="Write the password" />
             <button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Saving.." : "Save"}
             </button>
