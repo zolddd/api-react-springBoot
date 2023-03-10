@@ -6,6 +6,7 @@ import LandingPage from '../pages/LandingPage';
 import HomeMaestro from '../pages/HomeMaestro';
 import HomeStudents from '../pages/HomeStudents';
 import Registro from '../pages/Registro';
+import Maqueta from '../pages/Maqueta';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/register-courses' element={<RegisterCourses />} />
           <Route path='/HomeCursos' element={<HomeMaestro />} />
           <Route path='/HomeStudent' element={<HomeStudents/>}/>
+          <Route path='/Maqueta' element={<Maqueta/>}/>
         </Routes>
     </div>
   )
