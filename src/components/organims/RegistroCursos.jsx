@@ -20,12 +20,12 @@ function RegstroCursos() {
         </div>
         <div className='inputs-cursos'>
         <WrapperInput type = "text" placeholder="Titulo" name="correo"/>
-        <select name="" id="">
-            <option value="">Agregar Categoria</option>
-            <option value="AutoCAD ">AutoCAD</option>
-            <option value="Topografia ">Topografia</option>
-            <option value="SketchUp">SketchUp</option>
-        </select>
+            <select name="" id="">
+                <option value="">Agregar Categoria</option>
+                <option value="AutoCAD ">AutoCAD</option>
+                <option value="Topografia ">Topografia</option>
+                <option value="SketchUp">SketchUp</option>
+            </select>
         </div>
 
         <div className='inputs-cursos'>
@@ -42,13 +42,13 @@ function RegstroCursos() {
         
         </div>
 
-        <div className='checkbox-v2'>
-            <input className='asasa' type="checkbox" /><label htmlFor="">Nivle basico</label>
-            <input type="checkbox" /><label htmlFor="">Nivel intermedio</label>
-            <input type="checkbox" /><label htmlFor="">Nivel avanzado</label>
-            {/* <WrapperInput type="checkbox" msn="Nivel Basico" />
-            <WrapperInput type="checkbox" msn="Nivel Intermedio" />
-            <WrapperInput type="checkbox" msn="Nivel Avazado" /> */}
+        <div className='inputs-cursosv2'>
+            <select name="" id="">
+                <option value="">Agregar Nivel</option>
+                <option value="basico ">Basico</option>
+                <option value="intermedio ">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
         </div>
 
         <div className='textArea'>

@@ -68,10 +68,23 @@
 }
 
 
-select{
+.inputs-cursos select{
     position: relative;
-    top: 25px;
+    top: 17px;
     width: 255px;
+    height: 51px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid hsl(249, 4%, 31%);
+    border-radius: 10px;
+    height: 66px;
+}
+
+.inputs-cursosv2 select{
+    position: relative;
+    top: 17px;
+    width: 510px;
     height: 51px;
     align-items: center;
     display: flex;
@@ -118,7 +131,7 @@ select{
 
 
 .textArea textarea{
-    width: 518px;
+    width: 510px;
     outline: none;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -223,6 +236,12 @@ select{
         /* border: 1px solid red; */
     }
     .inputs-cursos input{
+        width: 310px;
+    }
+    .inputs-cursos select{
+        width: 310px;
+    }
+    .inputs-cursosv2 select{
         width: 310px;
     }
     .file{
