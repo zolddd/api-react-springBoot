@@ -10,22 +10,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 15px 18%;
 }
 
 .container-cursos{
     position: relative;
     background-color: #Fff;
-    border: 2px solid #03989E;
     border-radius: 20px;
-    padding: 50px 90px;
+    /* padding: 50px 90px; */
+    padding: 20px 20px;
+    margin: 0 auto;
     width: auto;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 25px;border: 2px solid;
+}
+.container-cursos{
+    border: 2px solid #03989E;
 }
 
 .container-cursos img{
@@ -38,6 +42,7 @@
 .container-cursos .ImgX{
     width: 40px;
     transition: 0.5s;
+    
 }
 
 .container-cursos .ImgX:hover{
@@ -55,13 +60,39 @@
 .inputs-cursos{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
 }
 
 .inputs-cursos input{
     width: 250px;
 }
 
+
+.inputs-cursos select{
+    position: relative;
+    top: 17px;
+    width: 255px;
+    height: 51px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid hsl(249, 4%, 31%);
+    border-radius: 10px;
+    height: 66px;
+}
+
+.inputs-cursosv2 select{
+    position: relative;
+    top: 17px;
+    width: 510px;
+    height: 51px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid hsl(249, 4%, 31%);
+    border-radius: 10px;
+    height: 66px;
+}
 
 .btn-cursos button{
     color: #fff;
@@ -100,7 +131,7 @@
 
 
 .textArea textarea{
-    width: 518px;
+    width: 510px;
     outline: none;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -136,9 +167,6 @@
     font-weight: bold;
 }
 
-
-
-
 .btn-cursos button:hover{
     background-color: #119b9fcd;
     cursor: pointer;
@@ -151,6 +179,7 @@
     width: 250px;
     height: 66px;
     top: 25px;
+    display: flex;
 }
 
 .file input{
@@ -186,4 +215,112 @@
 }
 
 
+@media screen and (max-width: 577px){   
+    .container-cursos img{
+        position: absolute;
+        right: 0;
+    }
+    .container-cursos{
+        border: none;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        padding: 10px;
+        background-color: transparent;
+    }
+    .inputs-cursos:nth-child(2){
+        position: relative;
+        top: -10px;
+    }
+    .inputs-cursos{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .inputs-cursos input{
+        width: 310px;
+    }
+    .inputs-cursos select{
+        width: 310px;
+    }
+    .inputs-cursosv2 select{
+        width: 310px;
+    }
+    .file{
+        position: relative;
+        top: 8px;
+        width: 310px;
+        display: flex;
+    }
+    .textArea textarea{
+        width: 310px;  
+    }
+    .checkbox-v2{
+        padding: 0 10px;
+    }
+    .checkbox-v2 input{
+        width: 30px;        
+    }
+    .checkbox-v2 label{
+        font-size: 10px;
+    }
+    .btn-cursos button{
+        width: 310px;  
+    }
+    select{
+        width: 310px;
+    }
+}
 
+
+@media screen and (max-width: 376px){
+    select{
+        width: 310px;
+        border: 2.5px solid hsl(244deg 4% 36%);
+        border-radius: 10px;
+        height: 66px;
+    }
+    .container-cursos img{
+        position: absolute;
+        right: 0;
+    }
+    .container-cursos{
+        border: none;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        padding: 10px;
+    }
+    .inputs-cursos:nth-child(2){
+        position: relative;
+        top: -10px;
+    }
+    .inputs-cursos{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .inputs-cursos input{
+        width: 310px;
+    }
+    .file{
+        position: relative;
+        top: 8px;
+        width: 310px;
+        display: flex;
+    }
+    .textArea textarea{
+        width: 310px;  
+    }
+    .checkbox-v2{
+        padding: 0 10px;
+    }
+    .checkbox-v2 input{
+        width: 30px;        
+    }
+    .checkbox-v2 label{
+        font-size: 10px;
+    }
+    .btn-cursos button{
+        width: 310px;  
+    }
+    .ImgX{
+        top: 100px;
+    }
+}

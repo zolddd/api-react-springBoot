@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 export default function Header() {
   const navigate=useNavigate();
   const handlerClick=()=>{
-    navigate("/registerStudent");
+    navigate("/registerTeacher");
   }
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">

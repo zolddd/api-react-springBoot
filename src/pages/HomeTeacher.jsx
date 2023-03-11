@@ -1,12 +1,11 @@
-import { useEffect,useContext } from "react"
-import { getCourses } from '../api/course.api'
+import Navbar from "../components/molecules/Navbar"
+import MaestroCursos from "../components/organisms/MaestroCursos"
 export default function HomeTeacher() {
-  async function render(){
-    const response= await getCourses()
-  }
+  
   return (
-    <div>Courses
-      {render()}
-    </div>
+    <div>
+    <Navbar/>
+    <MaestroCursos/>
+    </div>  
   )
 }

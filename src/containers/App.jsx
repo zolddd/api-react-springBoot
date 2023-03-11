@@ -10,7 +10,8 @@ import FormRegisterTeacher from "../components/molecules/FormRegisterTeacher";
 import FormEditCourse from '../components/molecules/FormEditCourse';
 import LandingPage from "../components/organisms/LandingPage";
 import FormLoginTeacher from '../components/organisms/FormLoginTeacher';
-
+import RegistroCursos from '../components/organisms/RegistroCursos';
+import HomeTeacher from '../pages/HomeTeacher';
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/registerStudent" element={<FormRegisterStudent/>} />
         <Route path="/registerTeacher" element={<FormRegisterTeacher/>} />
-        <Route path="/createCourse" element={<FormCreateCourse />} />
+        <Route path="/createCourse" element={<RegistroCursos />} />
         <Route path="/coursesStudent" element={<CoursesStudent/>} />
         <Route path="/registerStudent" element={<FormRegisterStudent />} />
         <Route path="/editCourse/:id" element={<FormEditCourse />} />
         <Route path="/login-teacher" element={<FormLoginTeacher />} />
+        <Route path="/registro_cursos" element={<RegistroCursos />} />
+        <Route path="/home_teacher" element={<HomeTeacher />} />
       </Routes>
     </CourseContextProvider>
   )

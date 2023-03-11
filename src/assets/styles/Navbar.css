@@ -1,0 +1,103 @@
+header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background: transparent; */
+	padding: 23px 13%;
+	transition: all .40s ease;
+}
+
+.nav-item1{
+	position: relative;
+	left: -240%;
+
+}
+
+.navbar-brand img{
+	width: 30px;
+	height: 40px;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar-nav{
+	display: flex;
+	gap: 20px;
+}
+.navbar a{
+	text-decoration: none;
+	color: var(--text-color);
+	font-weight: 600;
+	font-size: var(--p-font);
+	padding: 10px 22px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	color: var(--main-color);
+}
+.header-icons{
+	display: flex;
+	align-items: center;
+}
+.header-icons i{
+	margin-left: 10px;
+	font-size: 24px;
+	color: var(--text-color);
+	transition: all .40s ease;
+	margin-right: 15px;
+}
+.header-icons i:hover{
+	transform: scale(1.2);
+	color: var(--main-color);
+}
+
+.navbar-collapse{
+	display: flex;
+	justify-content: space-between;
+}
+.navbar-collapse{
+    padding:  0 30px;
+}
+
+.container-fluid{
+	padding: 0px 20px;
+}
+
+.navbar-perfil{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.header-btn-iz a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 522px){
+	.navbar-collapse ul li{
+		flex-direction: column;
+		display: flex;
+
+	}
+	.header-btn-iz{
+		display: flex;
+		flex-direction: column;
+	}
+	.header-btn-iz a{
+		font-size: 13px;
+	}
+	.header-btn-iz button{
+		font-size: 13px;
+	}
+	.container-fluid{
+		padding: 0px 12px;
+	}
+}
